@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MITR",
+  "dependencies": {
+    "@google-ai/generativelanguage": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.0.0"
+  }
+}
