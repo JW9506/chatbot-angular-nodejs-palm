@@ -11,5 +11,12 @@ const client = new DiscussServiceClient({
   authClient: new GoogleAuth().fromAPIKey(API_KEY),
 });
 
+app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
+
 app.post("/api/chatbot", async (req, res) => {
 });
