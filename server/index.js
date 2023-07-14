@@ -6,8 +6,10 @@ const { DiscussServiceClient } = require("@google-ai/generativelanguage");
 const { GoogleAuth } = require("google-auth-library");
 
 const API_KEY = process.env.API_KEY;
-console.log(API_KEY);
+
 const client = new DiscussServiceClient({
   authClient: new GoogleAuth().fromAPIKey(API_KEY),
 });
-console.log(client);
+
+app.post("/api/chatbot", async (req, res) => {
+});
