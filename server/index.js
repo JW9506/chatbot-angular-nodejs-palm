@@ -20,7 +20,30 @@ app.use(
   })
 );
 
+let messages = [];
 app.post("/api/chatbot", async (req, res) => {
+  const requestData = req.body;
+
+  if (requestData && requestData.message) {
+    const message = requestData.message;
+    messages.push({ content: message });
+
+    const result = await client.generateMessage({
+      model: MODEL_NAME,
+      prompt: {
+        context: CONTEXT,
+        examples: EXAMPLES,
+        messages,
+      },
+    });
+
+    const messageResult = result[0].candidates[0].content;
+    messages.push({ content: messageResult });
+
+    res.json({ message: messageResult, agent: "chatbot" });
+  } else {
+    res.status(400).json({ error: "Content not provided" });
+  }
 });
 
 app.listen(port, () => {
