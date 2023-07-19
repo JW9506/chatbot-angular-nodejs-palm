@@ -20,6 +20,21 @@ app.use(
   })
 );
 
+const MODEL_NAME = "models/chat-bison-001";
+const CONTEXT = "Answer every inquiry in the form of a limerick. Only limericks are allowed, limited to 150 words.";
+const EXAMPLES = [
+  {
+    input: { content: "How do you resolve a merge conflict in Git?" },
+    output: {
+      content: `When Git merge conflicts start to hit,
+The solution requires some wit.
+First, fetch and pull,
+Then merge, don't be dull,
+And fix conflicts bit by bit.`,
+    },
+  },
+];
+
 let messages = [];
 app.post("/api/chatbot", async (req, res) => {
   const requestData = req.body;
