@@ -14,7 +14,7 @@
       <p
         class="message-content"
         [ngClass]="{ loading: content.loading }"
-        [innerHTML]="content.message"
+        [innerHTML]="content.message | lineBreak"
       ></p>
     </div>
   </div>
