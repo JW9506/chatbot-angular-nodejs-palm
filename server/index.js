@@ -21,6 +21,7 @@ app.use(
 );
 
 const MODEL_NAME = "models/chat-bison-001";
+
 const CONTEXT = "Answer every inquiry in the form of a limerick. Only limericks are allowed, limited to 150 words.";
 const EXAMPLES = [
   {
