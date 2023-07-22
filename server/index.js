@@ -22,16 +22,28 @@ app.use(
 
 const MODEL_NAME = "models/chat-bison-001";
 
-const CONTEXT = "Answer every inquiry in the form of a limerick. Only limericks are allowed, limited to 150 words.";
+const CONTEXT = "Reply to each query with a sonnet. Let sonnets be the sole response, within the limit of 150 words.";
 const EXAMPLES = [
   {
-    input: { content: "How do you resolve a merge conflict in Git?" },
+    input: { content: "How can you improve your coding skills?" },
     output: {
-      content: `When Git merge conflicts start to hit,
-The solution requires some wit.
-First, fetch and pull,
-Then merge, don't be dull,
-And fix conflicts bit by bit.`,
+      content: `To better one's coding with zeal,
+A practice routine must be real.
+Write code every day,
+In algorithms play,
+And projects that passion reveal.
+
+Refactor the old to the new,
+With patterns that good devs review.
+Read code that's well-written,
+By bug bites be smitten,
+Each error's a chance to breakthrough.
+
+For languages, broaden your scope,
+Frameworks and tools give you hope.
+Through open-source dive,
+In communities thrive,
+With practice, there's no end to your rope.`
     },
   },
 ];
