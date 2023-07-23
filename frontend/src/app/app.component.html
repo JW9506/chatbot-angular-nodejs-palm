@@ -10,6 +10,7 @@
     class="chat-message"
     [ngClass]="content.agent"
   >
+    <img [src]="'assets/avatar-' + content.agent + '.png'" class="avatar" />
     <div class="message-details">
       <p
         class="message-content"
