@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ChatService } from './service/chat.service';
 import { ChatContent } from './interface/chat-content.interface';
 import { finalize } from 'rxjs';
+import { ChatServiceMock } from './service/chat.service.mock';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent {
 
   contents: ChatContent[] = [];
   
-  constructor(private chatService: ChatService) {
+  constructor(private chatService: ChatServiceMock) {
 
   }
 
