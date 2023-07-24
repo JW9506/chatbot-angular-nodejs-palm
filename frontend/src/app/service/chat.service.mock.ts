@@ -54,6 +54,7 @@ export class ChatServiceMock {
           Hello, I am chatbot
           `,
         });
+        observer.complete();
       }, 200);
     })
   }
