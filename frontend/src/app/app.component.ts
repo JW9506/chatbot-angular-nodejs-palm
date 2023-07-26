@@ -15,7 +15,7 @@ export class AppComponent {
 
   contents: ChatContent[] = [];
   
-  constructor(private chatService: ChatServiceMock) {
+  constructor(private chatService: ChatService) {
 
   }
 
