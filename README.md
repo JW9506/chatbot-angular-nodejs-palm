@@ -2,6 +2,7 @@
 
 Get your own API_KEY from [Generative Language API](https://console.cloud.google.com/apis/library/browse?q=generative%20language%20api), server will read an environment variable named `API_KEY` to run.
 
+(Work In Progress)
 ![Waiting](./waiting.jpg)
 ![Message Loaded](./message_loaded.jpg)
 
