@@ -1,37 +1,45 @@
-# Chatbot build in Angular 17 and NodeJS, using models/chat-bison-001
+# Chatbot Project Overview
+This project features a chatbot built using Angular 17 and NodeJS, integrating the `models/chat-bison-001` for natural language processing.
 
-Get your own API_KEY from [Generative Language API](https://console.cloud.google.com/apis/library/browse?q=generative%20language%20api), server will read an environment variable named `API_KEY` to run.
+## Getting Started
+To use this chatbot, obtain your own API key from the [Generative Language API](https://console.cloud.google.com/apis/library/browse?q=generative%20language%20api). The server requires this API key, set in an environment variable named `API_KEY`.
 
+### Current Project Status
 (Work In Progress)
-![Waiting](./waiting.jpg)
-![Message Loaded](./message_loaded.jpg)
+- ![Waiting Image](./waiting.jpg)
+- ![Message Loaded Image](./message_loaded.jpg)
 
 ## Software Requirements
-- NodeJS v18.19.0
-- Angular CLI v17.0.7
+- **NodeJS**: Version 18.19.0
+- **Angular CLI**: Version 17.0.7
 
-## Server
+## Setting Up the Server
+Follow these steps to install server dependencies and run the server:
 
-Install server dependencies
+```bash
+# Navigate to the server directory
+cd server
 
- ```bash
-    # Move to the right folder
-    cd server
-    # To install dependencies
-    yarn
-    cd ..
-    # Run server
-    node server
+# Install dependencies
+yarn
+
+# Return to the project root
+cd ..
+
+# Run the server
+node server
 ```
 
-## Frontend
-Install frontend development dependencies
+## Setting Up the Frontend
+Follow these steps to install server dependencies and run the server:
 
- ```bash
-    # Move to the right folder
-    cd frontend
-    # To install dependencies
-    yarn
-    # Start a frontend development server
-    yarn start
+```bash
+# Navigate to the frontend directory
+cd frontend
+
+# Install dependencies
+yarn
+
+# Start the frontend development server
+yarn start
 ```
