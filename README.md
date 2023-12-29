@@ -4,6 +4,10 @@ This project features a chatbot built using Angular 17 and NodeJS, integrating t
 ## Getting Started
 To use this chatbot, obtain your own API key from the [Generative Language API](https://console.cloud.google.com/apis/library/browse?q=generative%20language%20api). The server requires this API key, set in an environment variable named `API_KEY`.
 
+### Todo
+- Upgrade to using Websocket
+- Tailwind Styling
+
 ### Current Project Status (Work In Progress)
 - ![Waiting Image](./waiting.jpg)
 - ![Message Loaded Image](./message_loaded.jpg)
