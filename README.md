@@ -3,6 +3,9 @@ This project features a chatbot built using Angular 17 and NodeJS, integrating t
 
 ## Getting Started
 To use this chatbot, obtain your own API key from the [Generative Language API](https://console.cloud.google.com/apis/library/browse?q=generative%20language%20api). The server requires this API key, set in an environment variable named `API_KEY`.
+You may do so by either:
+- Creating a `.env` file in the root of the project, and write `API_KEY=<your key>` (Supported by [dotenv](https://www.npmjs.com/package/dotenv))
+- `export API_KEY=<your key>` in your terminal.
 
 ### Todo
 - Upgrade to using Websocket
