@@ -1,5 +1,5 @@
 # Chatbot Project Overview
-This project features a chatbot built using Angular 17 and NodeJS, integrating the `models/chat-bison-001` for natural language processing.
+This project features a chatbot built using Angular 16 and NodeJS, integrating the `models/chat-bison-001` for natural language processing.
 
 ## Getting Started
 To use this chatbot, obtain your own API key from the [Generative Language API](https://console.cloud.google.com/apis/library/browse?q=generative%20language%20api). The server requires this API key, set in an environment variable named `API_KEY`.
@@ -16,8 +16,8 @@ You may do so by either:
 - ![Message Loaded Image](./message_loaded.jpg)
 
 ## Software Requirements
-- **NodeJS**: Version 18.19.0
-- **Angular CLI**: Version 17.0.7
+- **NodeJS**
+- **Angular CLI**
 
 ## Setting Up the Server
 Follow these steps to install server dependencies and run the server:
