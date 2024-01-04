@@ -8,6 +8,7 @@ You may do so by either:
 - `export API_KEY=<your key>` in your terminal.
 
 ### Todo
+- Multiple chat session
 - Upgrade to using Websocket
 - Tailwind Styling
 
