@@ -9,7 +9,6 @@ You may do so by either:
 
 ### Todo
 - Multiple chat session
-- Upgrade to using Websocket
 - Tailwind Styling
 
 ### Current Project Status (Work In Progress)
